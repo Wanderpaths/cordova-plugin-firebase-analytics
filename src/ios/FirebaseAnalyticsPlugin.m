@@ -8,9 +8,10 @@
 - (void)pluginInitialize {
     NSLog(@"Starting Firebase Analytics plugin");
 
-    if(![FIRApp defaultApp]) {
-        [FIRApp configure];
-    }
+//     ATENTION: This comment avoid conflicts with cordova-plugin-fcm
+//     if(![FIRApp defaultApp]) {
+//         [FIRApp configure];
+//     }
 }
 
 - (void)logEvent:(CDVInvokedUrlCommand *)command {
